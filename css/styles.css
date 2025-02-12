@@ -22,6 +22,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+p{
+    margin: 0;
+}
 
 /*=========================================
                 Composantes
@@ -55,6 +58,9 @@ h2{
 }
 
 /*-----------Section règles-----------*/
+.regles{
+    row-gap: 40px;
+}
 article p{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -64,12 +70,28 @@ article p{
 }
 
 .guillemets, .espace, .windows, .line-height{
-    padding: 10px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.guillemets{
+    padding-left: 50px;
+    padding-right: 200px;
+}
+.espace{
+    padding-left: 200px;
+    padding-right: 50px;
+}
+.windows{
+    padding-left: 50px;
+    padding-right: 200px;
+}
+.line-height{
+    padding-left: 200px;
+    padding-right: 50px;
+}
 .rond1, .rond2, .rond3, .rond4{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -91,4 +113,19 @@ article p{
 }
 .espace{
     background-color: #BDC3C7;
+}
+
+/*-----------Section infos----------*/
+.infos .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+.gauche, .droite{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0rem;
+    line-height: 25px;
 }
