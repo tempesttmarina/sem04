@@ -59,7 +59,7 @@ h2{
 
 /*-----------Section règles-----------*/
 .regles{
-    row-gap: 40px;
+    margin: 30px 0;
 }
 article p{
     font-family: "Quicksand", serif;
@@ -76,22 +76,16 @@ article p{
     justify-content: space-between;
     align-items: center;
 }
-.guillemets{
+.guillemets, .windows{
     padding-left: 50px;
     padding-right: 200px;
 }
-.espace{
+.espace, .line-height{
     padding-left: 200px;
     padding-right: 50px;
 }
-.windows{
-    padding-left: 50px;
-    padding-right: 200px;
-}
-.line-height{
-    padding-left: 200px;
-    padding-right: 50px;
-}
+
+
 .rond1, .rond2, .rond3, .rond4{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -119,7 +113,7 @@ article p{
 .infos .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    margin-bottom: 40px;
 }
 .gauche, .droite{
     font-family: "Roboto", serif;
@@ -127,5 +121,39 @@ article p{
     font-weight: 400;
     font-style: normal;
     font-size: 2.0rem;
-    line-height: 25px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+}
+
+/*-----------Footer------------*/
+footer{
+    background-color: #2980B9;
+    padding: 25px 200px;
+}
+footer p{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.0rem;
+}
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fleche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    border: #BDC3C7 solid 3px;
+    border-radius: 50%;
+}
+.material-symbols-outlined{
+    font-size: 25px;
 }
